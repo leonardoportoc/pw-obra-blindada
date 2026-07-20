@@ -112,6 +112,16 @@
   .seqi p .fill{color:var(--gold-dk);font-style:italic;font-weight:600}
   .seqlabel{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--navy);margin-bottom:10px}
 
+  /* bloco de prompt de imagem (carrossel / post estatico sem foto da obra) */
+  .genimg{margin-top:16px;background:#FBF6EE;border:1px solid #E8D9BE;border-radius:12px;padding:16px 18px}
+  .genimg .lb{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--gold-dk);margin-bottom:8px}
+  .genimg .how{font-size:14px;color:var(--muted);margin-bottom:12px}
+  .genimg .how b{color:var(--ink)}
+  .prompt{background:var(--navy);border-radius:10px;padding:14px 16px}
+  .prompt .ptop{display:flex;align-items:center;gap:7px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:9px}
+  .prompt .ptext{font-size:13.6px;line-height:1.6;color:#E9E4DA}
+  .prompt .ptext em{color:var(--gold-lt);font-style:normal}
+
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:12.8px}
   footer img{width:52px;opacity:.5;margin-bottom:12px}
   .cta{background:var(--navy);color:#E9E4DA;border-radius:20px;padding:40px;text-align:center}
@@ -172,6 +182,10 @@
         <h3>O que está entre colchetes é seu</h3>
         <p>Onde aparecer <span class="fill">[assim, em dourado]</span>, é onde você entra com o número real da sua obra ou o seu caso. Só você tem esse dado — e é ele que dá verdade ao vídeo.</p>
       </div>
+      <div class="card">
+        <h3>Carrossel e post de imagem</h3>
+        <p>Nesses, além do texto de cada slide, tem um bloco <b>🎨 "crie a imagem"</b> com um prompt pronto. Use quando não tiver uma foto boa da obra: cole o prompt num gerador, e monte o post por cima no Canva.</p>
+      </div>
     </div>
     <div class="good">
       <b>O tom é sempre o mesmo:</b> fale como se estivesse explicando para um amigo que vai construir e está com medo. Sem palavra difícil, sem pressa. Frase curta. Quando citar um termo técnico, traduza na hora. E nunca prometa lucro ou economia garantida — você promete clareza e método.
@@ -222,6 +236,14 @@
           <div class="seqi"><span class="tag">Slide 5</span><p>4. Certidões do vendedor — protegem você se ele tiver processo na Justiça</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Pediu tudo isso? Aí sim pode assinar. Salva esse post pra não esquecer na hora.</p></div>
         </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Vista de cima de uma mesa de madeira clara com uma planta de arquitetura enrolada, alguns documentos oficiais e uma caneta ao lado, com luz de manhã entrando pela janela. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -253,6 +275,14 @@
         <div class="beat gancho"><span class="lb">Texto da arte</span><div class="fala">Ninguém deveria construir o maior patrimônio da vida no escuro.</div></div>
         <div class="beat corpo"><span class="lb">Legenda do post</span><div class="fala">Por isso eu abri a minha obra: cada etapa, cada erro, cada número. Não a casa bonita do final. A conta do meio.</div></div>
         <div class="tip"><b>Opcional:</b> se quiser, grave um vídeo curto lendo essas duas frases olhando na câmera. Fica mais forte que só a arte. Depois de publicar, fixe no topo do perfil.</div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva e escreva as duas frases do manifesto por cima, em letra dourada.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">A silhueta de uma casa em construção ao entardecer, com a estrutura de concreto aparente, sob um céu azul-marinho escuro com um leve brilho dourado no horizonte, transmitindo uma atmosfera séria e imponente. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -288,6 +318,14 @@
           <div class="seqi"><span class="tag">Slide 4</span><p>Se estourou, eu mostro. Sem esconder.</p></div>
           <div class="seqi"><span class="tag">Slide 5</span><p>Previsibilidade não é a obra que nunca erra. É saber o número antes de ele virar susto.</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Salva e acompanha mês a mês.</p></div>
+        </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Close de uma mão anotando números em uma planilha de papel sobre uma prancheta, com uma calculadora ao lado; ao fundo, desfocada, uma obra em andamento. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -326,6 +364,14 @@
           <div class="seqi"><span class="tag">Slide 4</span><p>Se o seu cronograma não fala a língua do banco, o dinheiro trava.</p></div>
           <div class="seqi"><span class="tag">Slide 5</span><p>E obra parada por falta de liberação é o pesadelo de quem financia.</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Salva isso antes de assinar o financiamento.</p></div>
+        </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Uma pequena maquete de casa ao lado de moedas empilhadas em degraus que vão crescendo, sobre uma mesa de madeira, com luz suave vindo de lado. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -399,6 +445,14 @@
           <div class="seqi"><span class="tag">Slide 6</span><p>5. O acabamento que "parecia incluso" e não estava</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Tudo isso tá na planilha grátis. Link na bio.</p></div>
         </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Uma lupa apoiada sobre um orçamento de obra impresso em papel, destacando as linhas de valores, sobre uma mesa de trabalho com luz natural. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -435,6 +489,14 @@
           <div class="seqi"><span class="tag">Slide 4</span><p>Pagamento por etapa entregue e aprovada</p></div>
           <div class="seqi"><span class="tag">Slide 5</span><p>Garantia dos serviços — o que acontece se rachar depois</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Sem essas, a palavra vira a única prova. Salva antes de assinar. E a planilha grátis tá na bio.</p></div>
+        </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Duas pessoas apertando as mãos sobre uma mesa onde estão um contrato de obra impresso e um capacete de construção, em um ambiente de escritório com luz natural. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -490,6 +552,14 @@
           <div class="seqi"><span class="tag">Slide 4</span><p>Você vê o erro no dia que ele acontece — e aprende antes de errar na sua.</p></div>
           <div class="seqi"><span class="tag">Slide 5</span><p>É a única forma de aprender obra sem pagar pra errar.</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Comenta EU QUERO pra saber como participar.</p></div>
+        </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Uma casa mostrada pela metade: um lado já acabado e pintado, o outro lado ainda em obra com estrutura e tijolos aparentes, mostrando o antes e o durante da construção. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -566,6 +636,14 @@
           <div class="seqi"><span class="tag">Slide 5</span><p>Grupo fechado com outras pessoas construindo junto</p></div>
           <div class="seqi"><span class="tag">Slide 6</span><p>Garantia de 15 dias. Vagas limitadas de verdade.</p></div>
           <div class="seqi"><span class="tag">Fecho</span><p>Link pra entrar na bio.</p></div>
+        </div>
+        <div class="genimg">
+          <div class="lb">🎨 Se não for usar foto da obra — crie a imagem</div>
+          <p class="how"><b>Sem foto boa da obra para este post?</b> Gere a imagem da <b>capa</b> com o prompt abaixo em qualquer gerador (ChatGPT, Gemini, o “Texto para imagem” do Canva, ou Magnific). Depois abra no Canva, use o modelo da marca e escreva o texto por cima. Os slides seguintes podem ser só fundo azul-marinho com o texto — não precisam de foto.</p>
+          <div class="prompt">
+            <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
+            <p class="ptext">Um grupo pequeno de pessoas usando capacete de obra, reunidas olhando juntas para uma planta de casa aberta sobre uma mesa em um canteiro de obras, transmitindo a sensação de um time. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
         </div>
       </div>
     </div>
