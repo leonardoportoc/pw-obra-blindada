@@ -55,6 +55,25 @@
   .hero strong,.manifesto strong,.cta strong,.week-h strong,.dark strong{color:#fff}
   .manifesto em,.cta em,.dark em{color:var(--gold)}
 
+  /* fluxo de leitura (como ler) */
+  .fluxo{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .fstep{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;display:flex;flex-direction:column}
+  .fstep.aqui{border-color:var(--gold);border-width:1.5px;background:#FCFAF6}
+  .fstep .fs-top{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+  .fstep .fs-n{width:34px;height:34px;flex:0 0 auto;border-radius:10px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px}
+  .fstep.aqui .fs-n{background:var(--gold);color:var(--navy)}
+  .fstep .fs-tempo{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .fstep h3{font-size:1.06rem;font-weight:600;margin-bottom:6px}
+  .fstep .fs-q{font-size:13.6px;color:var(--gold-dk);font-style:italic;margin-bottom:8px}
+  .fstep p{font-size:14px;color:var(--muted);margin:0}
+  .fstep .fs-link{display:inline-block;margin-top:auto;padding-top:14px;font-size:13.6px;font-weight:600;text-decoration:none;color:var(--gold-dk)}
+  .fstep:not(:last-child):after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:17px;font-weight:700;z-index:2}
+  @media(max-width:900px){
+    .fluxo{grid-template-columns:1fr 1fr}
+    .fstep:not(:last-child):after{display:none}
+  }
+  @media(max-width:560px){ .fluxo{grid-template-columns:1fr} }
+
   .grid{display:grid;gap:18px}
   .g2{grid-template-columns:1fr 1fr}
   .g3{grid-template-columns:repeat(3,1fr)}
@@ -197,6 +216,7 @@
 
 <nav>
   <div class="wrap">
+    <a href="#comoler">Como ler</a>
     <a href="guia-execucao-conteudo.html" style="color:var(--gold-dk);font-weight:600">🎬 Guia de execução</a>
     <a href="roteiros-conteudo.html" style="color:var(--gold-dk);font-weight:600">🎤 Roteiros</a>
     <a href="estrutura-produtos-oferta.html" style="color:var(--gold-dk);font-weight:600">💰 O que você vende</a>
@@ -220,38 +240,57 @@
 </nav>
 
 <!-- ══════ OPORTUNIDADE ══════ -->
-<!-- ══════ CARDS DAS PÁGINAS-COMPANION ══════ -->
-<section id="guia" style="padding-top:44px;padding-bottom:44px">
+<!-- ══════ COMO LER · FLUXO ══════ -->
+<section id="comoler" style="padding-top:46px">
   <div class="wrap">
-    <p class="eyebrow" style="margin-bottom:14px">As duas páginas que fazem o plano acontecer</p>
-    <div class="grid g2" style="gap:16px">
+    <div class="sec-h">
+      <span class="eyebrow">Comece por aqui</span>
+      <h2>Como ler este planejamento</h2>
+      <p>Este planejamento tem <strong>quatro partes</strong>, e elas foram escritas para serem lidas <strong>nesta ordem</strong>. Cada uma responde a uma pergunta diferente — e uma só faz sentido depois da anterior.</p>
+    </div>
 
-      <a href="guia-execucao-conteudo.html" style="text-decoration:none;color:inherit;display:block">
-        <div class="dark" style="height:100%;background:linear-gradient(120deg,var(--navy),var(--navy-2));border:1px solid rgba(192,139,74,.35);border-radius:20px;padding:28px 30px;position:relative;overflow:hidden">
-          <div style="position:absolute;top:-40%;right:-16%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(192,139,74,.18),transparent 68%)"></div>
-          <div style="position:relative">
-            <div style="font-size:2.2rem;line-height:1;margin-bottom:14px">🎬</div>
-            <span class="eyebrow" style="color:var(--gold)">Guia de execução</span>
-            <h3 style="font-family:'Poppins';color:#fff;font-size:1.3rem;font-weight:600;line-height:1.25;margin:8px 0 8px">Como colocar o conteúdo de pé, sem ser da área</h3>
-            <p style="color:#B9C2CE;font-size:14.4px;margin-bottom:18px">O que gravar antes, o tom de voz, as 7 técnicas, e os <strong>30 dias com legenda pronta</strong> — com os momentos de captar contato e de vender marcados.</p>
-            <span style="display:inline-block;background:var(--gold);color:var(--navy);font-family:'Poppins';font-weight:600;font-size:.92rem;padding:11px 22px;border-radius:11px">Abrir o guia →</span>
-          </div>
-        </div>
-      </a>
+    <div class="fluxo">
 
-      <a href="estrutura-produtos-oferta.html" style="text-decoration:none;color:inherit;display:block">
-        <div class="dark" style="height:100%;background:linear-gradient(120deg,var(--navy),var(--navy-2));border:1px solid rgba(192,139,74,.35);border-radius:20px;padding:28px 30px;position:relative;overflow:hidden">
-          <div style="position:absolute;top:-40%;right:-16%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(192,139,74,.18),transparent 68%)"></div>
-          <div style="position:relative">
-            <div style="font-size:2.2rem;line-height:1;margin-bottom:14px">💰</div>
-            <span class="eyebrow" style="color:var(--gold)">Estrutura de produtos e oferta</span>
-            <h3 style="font-family:'Poppins';color:#fff;font-size:1.3rem;font-weight:600;line-height:1.25;margin:8px 0 8px">O que você vende — e na ordem certa</h3>
-            <p style="color:#B9C2CE;font-size:14.4px;margin-bottom:18px">A isca grátis, o curso por dentro (módulo a módulo), os bônus, o preço, a garantia e <strong>por que a pessoa compra</strong>. A máquina de receita inteira.</p>
-            <span style="display:inline-block;background:var(--gold);color:var(--navy);font-family:'Poppins';font-weight:600;font-size:.92rem;padding:11px 22px;border-radius:11px">Ver a estrutura →</span>
-          </div>
-        </div>
-      </a>
+      <div class="fstep aqui">
+        <div class="fs-top"><span class="fs-n">1</span><span class="fs-tempo">~20 min · você está aqui</span></div>
+        <h3>Entenda o negócio</h3>
+        <p class="fs-q">"Por que alguém vai comprar de mim?"</p>
+        <p>Esta página. O mercado, o problema que a marca ataca, para quem falamos, o que a PW vende e como o dinheiro entra. É a base de tudo.</p>
+        <span class="fs-link" style="color:var(--muted)">Leia até o fim ↓</span>
+      </div>
 
+      <div class="fstep">
+        <div class="fs-top"><span class="fs-n">2</span><span class="fs-tempo">~10 min</span></div>
+        <h3>Veja o que será vendido</h3>
+        <p class="fs-q">"O que exatamente eu vou oferecer?"</p>
+        <p>A escada de produtos: a isca grátis, o treinamento por dentro (módulo a módulo), os bônus, o preço e a garantia.</p>
+        <a class="fs-link" href="estrutura-produtos-oferta.html">💰 O que você vende →</a>
+      </div>
+
+      <div class="fstep">
+        <div class="fs-top"><span class="fs-n">3</span><span class="fs-tempo">~15 min</span></div>
+        <h3>Aprenda a produzir</h3>
+        <p class="fs-q">"Como eu faço isso na prática?"</p>
+        <p>O passo a passo de execução: o que filmar antes, o tom de voz, as técnicas, e o calendário dos 30 dias com o momento certo de captar contato e de vender.</p>
+        <a class="fs-link" href="guia-execucao-conteudo.html">🎬 Guia de execução →</a>
+      </div>
+
+      <div class="fstep">
+        <div class="fs-top"><span class="fs-n">4</span><span class="fs-tempo">no dia a dia</span></div>
+        <h3>Execute</h3>
+        <p class="fs-q">"O que eu falo e o que eu posto?"</p>
+        <p>A fala pronta de cada vídeo e a legenda de cada post, com assinatura, hashtags e botão de copiar. É a página que você abre na hora de gravar.</p>
+        <a class="fs-link" href="roteiros-conteudo.html">🎤 Roteiros e legendas →</a>
+      </div>
+
+    </div>
+
+    <div class="alert" style="margin-top:26px">
+      <b>Por que ler tudo antes de gravar o primeiro vídeo.</b> A tentação é pular direto para o calendário dos 30 dias e começar a postar. Não faça isso. Os 30 dias não são uma lista de ideias soltas: eles formam <strong>um caminho que termina numa venda no dia 27</strong>. Cada post existe por um motivo, e na ordem em que está. Quem começa a postar sem entender esse fio publica conteúdo bonito, junta seguidor, e no fim do mês não tem lista nem venda — porque os 26 dias anteriores não foram construídos para isso.
+    </div>
+
+    <div class="good" style="margin-top:14px">
+      <b>Uma leitura de 45 minutos, uma vez.</b> Depois disso você só volta aqui para consultar. As partes 3 e 4 são de uso diário — as partes 1 e 2 você lê uma vez e entende o resto do ano inteiro.
     </div>
   </div>
 </section>

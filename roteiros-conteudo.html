@@ -112,6 +112,19 @@
   .seqi p .fill{color:var(--gold-dk);font-style:italic;font-weight:600}
   .seqlabel{font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--navy);margin-bottom:10px}
 
+  /* bloco de legenda pronta com botao de copiar */
+  .legenda{margin-top:16px;border:1px solid #CFE0D8;border-radius:12px;overflow:hidden;background:#F6FAF8}
+  .legenda .lg-h{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 16px;background:#EAF2EE;border-bottom:1px solid #CFE0D8;flex-wrap:wrap}
+  .legenda .lg-h .lb{display:flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ok)}
+  .lg-copy{border:0;cursor:pointer;background:var(--navy);color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;padding:8px 16px;border-radius:8px;transition:background .15s}
+  .lg-copy:hover{background:var(--navy-2)}
+  .lg-copy.ok{background:var(--ok)}
+  .legenda .lg-body{padding:16px 18px}
+  .legenda .lg-body p{font-size:14.8px;line-height:1.68;color:var(--ink);margin:0 0 15px}
+  .legenda .lg-body p:last-child{margin-bottom:0}
+  .legenda .lg-sig{color:var(--muted);font-size:14.2px;line-height:1.6}
+  .legenda .lg-tags{color:var(--gold-dk);font-size:13.6px;line-height:1.7;word-spacing:2px}
+
   /* bloco de prompt de imagem (carrossel / post estatico sem foto da obra) */
   .genimg{margin-top:16px;background:#FBF6EE;border:1px solid #E8D9BE;border-radius:12px;padding:16px 18px}
   .genimg .lb{display:flex;align-items:center;gap:8px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--gold-dk);margin-bottom:8px}
@@ -282,6 +295,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Não a foto bonita do final. O meio. Quanto custou a fundação. O que estourou. O erro que quase me pegou. Tudo aberto, etapa por etapa. Porque quando eu fui procurar isso na internet, só achei casa pronta e final feliz. Ninguém mostra a conta.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Se você vai construir um dia, me segue. Vai ser a obra mais transparente que você já viu.</div></div>
         <div class="tip"><b>Como dizer:</b> pausado, olhando na câmera. Este é o vídeo de apresentação — vale gravar uma manhã inteira até sair natural.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Comecei a construir uma casa de 119 metros quadrados. E decidi fazer uma coisa que quase ninguém faz: mostrar cada número.</p>
+            <p data-l>Não a foto bonita do final. O meio. Quanto custou cada etapa, o que estourou, o erro que quase me pegou. Porque quando eu fui procurar isso, só achei casa pronta e final feliz.</p>
+            <p data-l>Se você pretende construir um dia, me acompanha aqui. Vai ser a obra mais transparente que você já viu.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #construindominhacasa #obradozero #casaprópria</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -320,6 +346,19 @@
             <p class="ptext">Vista de cima de uma mesa de madeira clara com uma planta de arquitetura enrolada, alguns documentos oficiais e uma caneta ao lado, com luz de manhã entrando pela janela. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Comprar terreno sem checar a papelada é a forma mais cara de economizar tempo.</p>
+            <p data-l>São quatro documentos que dizem se o terreno é mesmo do vendedor, se vem com dívida junto e o que a prefeitura deixa você construir ali. Custam pouco e evitam um prejuízo que não tem volta.</p>
+            <p data-l>Salva este post e leva a lista quando for visitar o terreno. Na hora da empolgação, ninguém lembra.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #comprarterreno #documentação #dicasdeconstrução</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -330,6 +369,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Esse terreno barato pode ser o mais caro da sua vida.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Olha essa inclinação aqui. <span class="fill">[aponte para o terreno]</span> Terreno torto assim precisa de aterro e muro de contenção antes de você levantar uma parede. Isso pode custar dezenas de milhares de reais. Um terreno plano, mais caro na compra, muitas vezes sai mais barato no final. O que importa não é o preço da placa. É o custo até ficar pronto pra construir.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Antes de comprar terreno, olha três coisas: a inclinação, o tipo de solo e o acesso. Comenta TERRENO que eu te explico cada uma.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Aquele terreno mais barato pode ser o mais caro da sua vida.</p>
+            <p data-l>Um terreno inclinado precisa de aterro e contenção antes da primeira parede. Isso pode custar dezenas de milhares de reais. Um terreno plano, mais caro na compra, muitas vezes sai mais barato no final.</p>
+            <p data-l>O que importa não é o preço da placa: é o custo até ficar pronto pra construir. Comenta TERRENO que eu te explico os três pontos que eu olho antes de fechar.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #terreno #custodeobra #dicasdeconstrução</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -341,6 +393,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Vai estourar por causa disso: o banco fala uma língua, o arquiteto fala outra, o construtor fala uma terceira. E no meio dos três, sozinho, tá você. Ninguém olha o todo. Cada um cuida do seu pedaço. Esse silêncio entre eles tem nome — eu chamo de silos — e é o verdadeiro motivo de tanta gente perder dinheiro construindo.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Não é falta de sorte. É falta de alguém traduzindo. Compartilha isso com quem vai construir.</div></div>
         <div class="tip"><b>Como dizer:</b> este é o vídeo mais importante da semana. Fale sério, sem música alta por cima. É o que apresenta a sua ideia central.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>A sua obra não vai estourar por causa do preço do cimento.</p>
+            <p data-l>Vai estourar porque o banco fala uma língua, o arquiteto fala outra e o construtor fala uma terceira. No meio dos três, sozinho, está você. Ninguém olha o conjunto.</p>
+            <p data-l>Esse silêncio entre as partes é o verdadeiro motivo de tanta gente perder dinheiro construindo. Não é falta de sorte: é falta de tradução. Compartilha com quem vai começar uma obra.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #gestãodeobra #orçamentodeobra #construçãocivil</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -357,6 +422,19 @@
           <div class="prompt">
             <div class="ptop">📋 Prompt para colar num gerador de imagem</div>
             <p class="ptext">A silhueta de uma casa em construção ao entardecer, com a estrutura de concreto aparente, sob um céu azul-marinho escuro com um leve brilho dourado no horizonte, transmitindo uma atmosfera séria e imponente. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
+          </div>
+        </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Ninguém deveria construir o maior patrimônio da vida no escuro.</p>
+            <p data-l>Por isso eu abri a minha obra: cada etapa, cada erro, cada número. Não a casa bonita do final — a conta do meio, que é onde as decisões realmente acontecem.</p>
+            <p data-l>Se você acredita que obra tem que ser previsível, e não uma aposta, salva este post. É disso que este perfil trata.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #casaprópria #construçãocivil #obraemandamento</p>
           </div>
         </div>
       </div>
@@ -403,6 +481,19 @@
             <p class="ptext">Close de uma mão anotando números em uma planilha de papel sobre uma prancheta, com uma calculadora ao lado; ao fundo, desfocada, uma obra em andamento. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Todo mês eu abro aqui a conta real da obra: o que eu planejei gastar e o que gastei de verdade.</p>
+            <p data-l>Sem esconder o que estourou. Porque previsibilidade não é a obra que nunca erra — é a obra em que você sabe o número antes de ele virar susto.</p>
+            <p data-l>Salva e acompanha mês a mês. É o tipo de dado que ninguém publica, e que muda a forma como você planeja a sua.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #orçamentodeobra #custodeobra #gestãodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -414,6 +505,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Um: o preço inclui o material? Dois: o que acontece se atrasar? Tem multa? Três: o pagamento é por etapa entregue, ou você quer tudo adiantado? <span class="fill">[pausa]</span> A resposta a essas três já te mostra com quem você tá falando. Quem foge delas, foge do compromisso.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Comenta aqui se você quer a lista completa de perguntas antes de assinar.</div></div>
         <div class="tip"><b>Como dizer:</b> conte as três perguntas nos dedos enquanto fala. Coloque cada uma como texto na tela.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Antes de fechar com qualquer empreiteiro, faça três perguntas.</p>
+            <p data-l>O preço inclui o material? O que acontece se atrasar, tem multa? O pagamento é por etapa entregue ou ele quer adiantado? A resposta a essas três já mostra com quem você está falando.</p>
+            <p data-l>Quem foge dessas perguntas, foge do compromisso. Comenta aqui se você quer a lista completa do que perguntar antes de assinar.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #empreiteiro #contratodeobra #dicasdeconstrução</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -425,6 +529,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala"><span class="fill">[Conte o que aconteceu de verdade, apontando pro lugar. Ex: aqui na fundação a gente descobriu que o solo era mais mole do que o esperado.]</span> Isso ia custar <span class="fill">[valor]</span>. O que me salvou foi ter pego cedo, antes de subir a parede em cima. Erro de obra não avisa. Mas dá sinal. E quem olha o número percebe antes de virar prejuízo.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Compartilha com quem tá começando uma obra.</div></div>
         <div class="tip"><b>Importante:</b> use um erro REAL da sua obra. É a verdade que faz este vídeo funcionar. Se não teve erro grande ainda, conte um perrengue pequeno — serve igual.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Vou te contar um erro que quase saiu caro na minha obra.</p>
+            <p data-l>O que me salvou foi ter percebido cedo, antes de subir a estrutura em cima. Erro de obra não avisa, mas dá sinal — e quem acompanha o número percebe antes de virar prejuízo.</p>
+            <p data-l>É por isso que eu confiro cada etapa antes de liberar a próxima. Compartilha com quem está começando uma obra agora.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #fundação #errosdeobra #gestãodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -449,6 +566,19 @@
             <p class="ptext">Uma pequena maquete de casa ao lado de moedas empilhadas em degraus que vão crescendo, sobre uma mesa de madeira, com luz suave vindo de lado. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Muita gente acha que o banco entrega todo o dinheiro do financiamento de uma vez. Não é assim.</p>
+            <p data-l>Ele libera por etapa, conforme a obra anda e é vistoriada. Se o seu cronograma não fala a mesma língua que o banco, o dinheiro trava — e a obra para no meio, com você já endividado.</p>
+            <p data-l>Salva este post antes de assinar qualquer financiamento. É o perrengue mais comum de quem constrói financiado.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #financiamentoimobiliário #casaprópria #cronogramadeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -459,6 +589,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Isso aqui é o exame de sangue do seu terreno.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Chama sondagem do solo. Custa pouco, uns <span class="fill">[valor]</span>, e diz o que tem embaixo da terra antes de você gastar com a fundação. Solo mole, água, rocha — tudo isso muda o custo. E você só descobre furando antes. Pular pra economizar é a receita pra gastar o dobro depois, quando a fundação tem que ser refeita.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Faz sempre a sondagem antes de projetar. Salva pra lembrar.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>A sondagem do solo é o exame de sangue do seu terreno.</p>
+            <p data-l>Custa pouco e diz o que existe embaixo da terra antes de você gastar com a fundação. Solo mole, lençol freático, rocha: tudo isso muda o custo, e você só descobre furando antes.</p>
+            <p data-l>Pular essa etapa para economizar é a receita para gastar o dobro depois, refazendo o que já estava pronto. Salva para lembrar na hora certa.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #sondagemdesolo #fundação #engenhariacivil</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -486,6 +629,19 @@
           <div class="seqi"><span class="tag">Bloco 2 · 10 min</span><p>Responde as perguntas do chat ao vivo.</p></div>
           <div class="seqi"><span class="tag">Fecho · 3 min</span><p>Se isso te ajudou, eu tenho essa planilha pronta pra você fazer a sua conta. Comenta LISTA aqui que eu te mando o link. <span class="fill">[capta o contato — não vende curso hoje]</span></p></div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Hoje eu vou abrir ao vivo uma coisa que quase ninguém abre: a conta real da minha obra.</p>
+            <p data-l>Quanto custa de verdade construir 119 metros quadrados, etapa por etapa, com a planilha na tela. Sem vender nada. Só o número, para você conseguir planejar o seu.</p>
+            <p data-l>Ativa o lembrete e vem com as suas dúvidas. Vou responder tudo ao vivo.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #custodeobra #orçamentodeobra #construçãocivil</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -504,6 +660,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala"><span class="fill">[mostra a planilha na tela do computador]</span> Aqui tem todas as etapas, e as cinco linhas de custo que somem da maioria dos orçamentos — as que aparecem só lá na frente, quando já é tarde. É a mesma base que eu uso na minha obra. E eu tô liberando de graça.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">O link pra baixar tá na minha bio. É de graça, é só pegar.</div></div>
         <div class="tip"><b>Antes de postar:</b> a planilha, a página de captura e o link na bio precisam estar prontos. Sem o link, o vídeo não capta ninguém.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Montei uma planilha com as linhas de custo que somem da maioria dos orçamentos.</p>
+            <p data-l>São aquelas que aparecem só lá na frente, quando já não dá para voltar atrás. É a mesma base que eu uso na obra que estou tocando agora.</p>
+            <p data-l>Estou liberando de graça: o link para baixar está na bio. Leva a sua antes de pedir o próximo orçamento.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #planilhadeobra #orçamentodeobra #planejamentofinanceiro</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -529,6 +698,19 @@
             <p class="ptext">Uma lupa apoiada sobre um orçamento de obra impresso em papel, destacando as linhas de valores, sobre uma mesa de trabalho com luz natural. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Existem cinco custos que quase nenhum orçamento mostra — e juntos eles pesam mais do que você imagina.</p>
+            <p data-l>Ligação de água e luz, taxas da prefeitura, caçamba de entulho, imprevisto de fundação e o acabamento que parecia incluso e não estava. Nenhum deles é opcional.</p>
+            <p data-l>Todos estão mapeados na planilha que eu liberei de graça. O link está na bio.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #custosocultos #orçamentodeobra #planilhadeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -539,6 +721,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Existem dois jeitos de tocar uma obra. Escolher errado custa caro.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">No primeiro, a empreitada fechada, você combina um preço e o risco é do construtor. Estourou? Problema dele. No segundo, a administração direta, você paga o que gastar e controla tudo — mas precisa de tempo e olho na obra. <span class="fill">[pausa]</span> Nenhum é melhor que o outro. O certo depende de quanto você consegue acompanhar.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Comenta qual é a sua dúvida entre os dois que eu respondo.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Existem dois jeitos de tocar uma obra, e escolher errado custa caro.</p>
+            <p data-l>Na empreitada fechada você combina um preço e o risco é do construtor. Na administração direta você paga o que gastar e controla tudo, mas precisa de tempo e olho na obra.</p>
+            <p data-l>Nenhum é melhor que o outro: o certo depende de quanto você consegue acompanhar. Comenta qual é a sua dúvida entre os dois que eu respondo por aqui.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #empreitada #gestãodeobra #contratodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -550,6 +745,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Medo de estourar o orçamento. De ser enganado. De deixar minha família no prejuízo. <span class="fill">[pausa]</span> O que me fez começar mesmo assim não foi coragem. Foi método. Foi ter cada etapa no papel antes de gastar o primeiro real. Quando você tem o mapa, o medo vira plano.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Se você também tem esse medo, você não tá errado. Só tá sem o mapa ainda. Comenta aqui embaixo.</div></div>
         <div class="tip"><b>Como dizer:</b> este é o vídeo mais pessoal do mês. Sem música alta, sem corte rápido. Deixe respirar. A verdade é o formato.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Antes de começar essa obra, eu tive medo.</p>
+            <p data-l>Medo de estourar o orçamento, de ser enganado, de deixar minha família no prejuízo. O que me fez começar mesmo assim não foi coragem: foi ter cada etapa no papel antes de gastar o primeiro real.</p>
+            <p data-l>Quando você tem o mapa, o medo vira plano. Se você também sente isso, você não está errado — só está sem o mapa ainda. Me conta nos comentários.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #primeiraobra #casaprópria #planejamento</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -574,6 +782,19 @@
             <p class="ptext">Duas pessoas apertando as mãos sobre uma mesa onde estão um contrato de obra impresso e um capacete de construção, em um ambiente de escritório com luz natural. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Um contrato de obra bem-feito é o que separa um perrengue de um processo.</p>
+            <p data-l>Prazo com data, multa por atraso, pagamento atrelado à etapa entregue e garantia dos serviços. Sem essas quatro cláusulas, a palavra vira a única prova que você tem.</p>
+            <p data-l>Salva este post antes de assinar qualquer coisa. E a planilha de custos continua liberada no link da bio.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #contratodeobra #empreiteiro #gestãodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -584,6 +805,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Se eu começasse essa obra hoje, faria três coisas diferentes.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala"><span class="fill">[Cite 2 ou 3 reais. Ex: Um: teria feito a sondagem do solo antes de fechar o projeto, não depois. Dois: teria colocado tudo no papel com o construtor desde o dia um.]</span> Não é arrependimento. É aprendizado. E agora eu passo pra você, pra você não pagar por ele.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Salva aí, que isso te economiza dor de cabeça.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Se eu começasse essa obra hoje, faria algumas coisas diferentes.</p>
+            <p data-l>Não é arrependimento: é o aprendizado que só aparece quando você está com o dinheiro na mesa e precisa decidir. Cada erro desses tem um custo, e eu já paguei por eles.</p>
+            <p data-l>Agora eu passo adiante para você não pagar de novo. Salva aí — isso economiza dor de cabeça lá na frente.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #errosdeobra #gestãodeobra #dicasdeconstrução</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -613,6 +847,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Vou fazer uma coisa que eu nunca vi ninguém fazer.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Vou abrir a minha obra inteira, por dentro, pra um grupo pequeno de pessoas acompanhar comigo. Do terreno à chave. Você vai ver a decisão sendo tomada, o erro acontecendo, o número na tela — ao vivo, todo mês. Não é curso gravado com obra dos outros. É a minha obra, de verdade, acontecendo agora.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">As vagas são poucas. Comenta EU QUERO que eu te aviso primeiro.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Vou fazer uma coisa que eu nunca vi ninguém fazer.</p>
+            <p data-l>Vou abrir a minha obra inteira, por dentro, para um grupo pequeno acompanhar comigo do terreno à chave. Você vai ver a decisão sendo tomada, o erro acontecendo e o número na tela, ao vivo, todo mês.</p>
+            <p data-l>Não é curso gravado com obra dos outros: é a minha obra, de verdade, acontecendo agora. As vagas são poucas. Comenta EU QUERO que eu te aviso primeiro.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #construçãocivil #casaprópria #investiremimóveis</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -637,6 +884,19 @@
             <p class="ptext">Uma casa mostrada pela metade: um lado já acabado e pintado, o outro lado ainda em obra com estrutura e tijolos aparentes, mostrando o antes e o durante da construção. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Todo mundo te mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l>Curso comum é teoria, com obra dos outros, gravada no ano passado. Obra aberta é diferente: você acompanha uma obra real acontecendo e vê o erro no dia em que ele acontece.</p>
+            <p data-l>É a única forma de aprender obra sem pagar para errar na sua. Comenta EU QUERO para saber como participar.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #construçãocivil #gestãodeobra #aprenderconstruindo</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -647,6 +907,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Eu não vou te ensinar a ser engenheiro. E você não precisa.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">O que você precisa é aprender a ser o dono que enxerga o projeto inteiro. Que confere cada etapa sem entender de cálculo. Que sabe a pergunta certa pra fazer. Que protege o próprio dinheiro. <span class="fill">[pausa]</span> Isso qualquer pessoa aprende. E é exatamente disso que a obra aberta trata.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Comenta EU QUERO se você quer participar.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Eu não vou te ensinar a ser engenheiro. E você não precisa.</p>
+            <p data-l>O que você precisa é aprender a ser o dono que enxerga o projeto inteiro: que confere cada etapa sem entender de cálculo, que sabe a pergunta certa a fazer e que protege o próprio dinheiro.</p>
+            <p data-l>Isso qualquer pessoa aprende. E é exatamente disso que a obra aberta trata. Comenta EU QUERO se você quer participar.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #donodaobra #primeiraobra #construçãocivil</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -657,6 +930,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Faz uma conta comigo.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Uma obra de 500 mil que estoura 20 por cento. <span class="fill">[escreve o número num papel]</span> Isso é 100 mil reais. Mais do que muita gente gasta num carro. Perdido. E 20 por cento é o desperdício normal de uma obra sem método — retrabalho, compra errada, atraso. <span class="fill">[pausa]</span> Aprender a evitar isso custa uma fração de um único erro desses.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Comenta EU QUERO.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Faz uma conta comigo. Uma obra de 500 mil que estoura 20 por cento perde 100 mil reais.</p>
+            <p data-l>Mais do que muita gente gasta em um carro. E 20 por cento é o desperdício comum de uma obra sem método: retrabalho, compra errada, atraso, material parado.</p>
+            <p data-l>Aprender a evitar isso custa uma fração de um único erro desses. Comenta EU QUERO para saber como participar.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #desperdíciodeobra #custodeobra #gestãodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -686,6 +972,19 @@
           <div class="seqi"><span class="tag">Fecho · 5 min</span><p>As vagas abrem agora e são <span class="fill">[número]</span>. O link tá aqui. Qualquer dúvida, manda que eu respondo.</p></div>
         </div>
         <div class="tip"><b>Não improvise a oferta.</b> Tenha na tela, escrito, o que está incluso, o preço, as vagas e a garantia. Veja tudo isso pronto na página <a href="estrutura-produtos-oferta.html">O que você vende</a>.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Hoje, ao vivo, eu vou te mostrar os três motivos reais que fazem uma obra estourar. E nenhum deles é o preço do material.</p>
+            <p data-l>São os silos: banco, projeto e execução que nunca conversam entre si. Vou mostrar como cada um drena o seu dinheiro e o que fazer para blindar os três.</p>
+            <p data-l>No final, eu conto como participar da Turma Fundadora e acompanhar a minha obra por dentro. Ativa o lembrete.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #aulagratuita #gestãodeobra #construçãocivil</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -696,6 +995,19 @@
         <div class="beat gancho"><span class="lb">🎣 Gancho · 0–3s</span><div class="fala">Duas coisas que eu mais ouço de quem quer entrar mas trava.</div></div>
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">A primeira: "não tenho terreno ainda". Ótimo — é o momento perfeito pra entrar, porque você aprende o caminho certo antes de gastar o primeiro real. A segunda: "não entendo nada de obra". Também perfeito. O treinamento é pra dono leigo, não pra engenheiro. <span class="fill">[pausa]</span> As duas desculpas são, na verdade, o melhor motivo pra começar agora.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">As vagas da Turma Fundadora tão abertas. Link na bio.</div></div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Duas coisas que eu mais ouço de quem quer entrar mas trava.</p>
+            <p data-l>A primeira: não tenho terreno ainda. É justamente o melhor momento, porque você aprende o caminho certo antes de gastar o primeiro real. A segunda: não entendo nada de obra. Também perfeito — é para dono leigo, não para engenheiro.</p>
+            <p data-l>As duas desculpas são, na verdade, o melhor motivo para começar agora. As vagas da Turma Fundadora estão abertas, link na bio.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #primeiraobra #casaprópria #construçãocivil</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -721,6 +1033,19 @@
             <p class="ptext">Um grupo pequeno de pessoas usando capacete de obra, reunidas olhando juntas para uma planta de casa aberta sobre uma mesa em um canteiro de obras, transmitindo a sensação de um time. Estilo de fotografia editorial realista (que não pareça arte de inteligência artificial), luz natural suave, cores predominantes azul-marinho profundo e dourado, composição limpa com bastante espaço vazio para escrever texto por cima depois, sem nenhuma palavra ou letra na imagem, proporção vertical 4:5 para Instagram, alta qualidade.</p>
           </div>
         </div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>A Turma Fundadora por dentro: o que você recebe ao entrar.</p>
+            <p data-l>Acompanhamento da minha obra ao vivo todo mês, as aulas liberadas por etapa (terreno, fundação, estrutura, acabamento), os modelos de contrato, a planilha completa e um grupo fechado com outras pessoas construindo junto.</p>
+            <p data-l>Garantia de 15 dias e vagas limitadas de verdade. O link para entrar está na bio.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #construçãocivil #casaprópria #investiremimóveis</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -732,6 +1057,19 @@
         <div class="beat corpo"><span class="lb">Desenvolvimento</span><div class="fala">Depois de hoje, as vagas fecham. E fecham de verdade — porque acompanhar a obra ao vivo tem limite de quantas pessoas eu consigo atender bem. <span class="fill">[pausa]</span> Se você vai construir de qualquer jeito, essa é a chance de construir sabendo.</div></div>
         <div class="beat fecho"><span class="lb">Fecho · o pedido</span><div class="fala">Link na bio. Última chamada.</div></div>
         <div class="tip"><b>Nos Stories, ao longo do dia:</b> responda as últimas dúvidas, mostre a contagem regressiva e reforce o encerramento. Feche as vagas de verdade no fim do dia.</div>
+        <div class="legenda">
+          <div class="lg-h">
+            <span class="lb">✍️ Legenda pronta para colar</span>
+            <button class="lg-copy" type="button" onclick="copiarLegenda(this)">Copiar legenda</button>
+          </div>
+          <div class="lg-body">
+            <p data-l>Hoje é o último dia para entrar na Turma Fundadora.</p>
+            <p data-l>Depois de hoje as vagas fecham, e fecham de verdade: acompanhar a obra ao vivo tem um limite real de quantas pessoas eu consigo atender bem.</p>
+            <p data-l>Se você vai construir de qualquer jeito, essa é a chance de construir sabendo. Link na bio.</p>
+            <p data-l class="lg-sig">—<br>PW Construção Inteligente<br>Todo mundo mostra a casa pronta. Aqui você vê a conta.</p>
+            <p data-l class="lg-tags">#construçãointeligente #obraaberta #construçãocivil #casaprópria #gestãodeobra</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -752,5 +1090,40 @@
   </div>
 </footer>
 
+<script>
+/* Copia a legenda inteira (parágrafos + assinatura + hashtags) com as linhas em branco. */
+function copiarLegenda(btn){
+  var caixa = btn.closest('.legenda').querySelector('.lg-body');
+  var partes = Array.prototype.map.call(caixa.querySelectorAll('[data-l]'), function(el){
+    return el.innerText.replace(/ /g,' ').trim();
+  });
+  var txt = partes.join('\n\n');
+
+  function ok(){
+    var original = btn.textContent;
+    btn.textContent = '✓ Copiado';
+    btn.classList.add('ok');
+    setTimeout(function(){ btn.textContent = original; btn.classList.remove('ok'); }, 1800);
+  }
+  function fallback(){
+    var ta = document.createElement('textarea');
+    ta.value = txt;
+    ta.setAttribute('readonly','');
+    ta.style.position = 'fixed'; ta.style.top = '0'; ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select(); ta.setSelectionRange(0, txt.length);
+    var deu = false;
+    try { deu = document.execCommand('copy'); } catch(e) { deu = false; }
+    document.body.removeChild(ta);
+    if (deu) { ok(); } else { btn.textContent = 'Selecione e copie'; }
+  }
+
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(txt).then(ok, fallback);
+  } else {
+    fallback();
+  }
+}
+</script>
 </body>
 </html>
