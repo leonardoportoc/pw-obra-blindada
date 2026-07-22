@@ -66,7 +66,12 @@
   .fstep h3{font-size:1.06rem;font-weight:600;margin-bottom:6px}
   .fstep .fs-q{font-size:13.6px;color:var(--gold-dk);font-style:italic;margin-bottom:8px}
   .fstep p{font-size:14px;color:var(--muted);margin:0}
-  .fstep .fs-link{display:inline-block;margin-top:auto;padding-top:14px;font-size:13.6px;font-weight:600;text-decoration:none;color:var(--gold-dk)}
+  .fstep .fs-foot{margin-top:auto;padding-top:18px}
+  .fstep .fs-hint{display:block;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px}
+  .fs-btn{display:flex;align-items:center;justify-content:center;gap:7px;text-align:center;background:var(--gold);color:var(--navy);font-family:'Poppins',sans-serif;font-weight:600;font-size:13.4px;line-height:1.25;text-decoration:none;padding:12px 12px;border-radius:10px;box-shadow:0 2px 0 rgba(20,33,50,.12);transition:background .15s,transform .08s}
+  .fs-btn:hover{background:var(--gold-lt)}
+  .fs-btn:active{transform:translateY(1px);box-shadow:none}
+  .fs-aqui{display:flex;align-items:center;justify-content:center;gap:7px;border:1px dashed var(--gold);color:var(--gold-dk);border-radius:10px;padding:12px;font-size:13.2px;font-weight:600;font-family:'Poppins',sans-serif}
   .fstep:not(:last-child):after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:17px;font-weight:700;z-index:2}
   @media(max-width:900px){
     .fluxo{grid-template-columns:1fr 1fr}
@@ -256,7 +261,10 @@
         <h3>Entenda o negócio</h3>
         <p class="fs-q">"Por que alguém vai comprar de mim?"</p>
         <p>Esta página. O mercado, o problema que a marca ataca, para quem falamos, o que a PW vende e como o dinheiro entra. É a base de tudo.</p>
-        <span class="fs-link" style="color:var(--muted)">Leia até o fim ↓</span>
+        <div class="fs-foot">
+          <span class="fs-hint">Página 1 de 4 · esta aqui</span>
+          <span class="fs-aqui">↓ Role e leia até o fim</span>
+        </div>
       </div>
 
       <div class="fstep">
@@ -264,7 +272,10 @@
         <h3>Veja o que será vendido</h3>
         <p class="fs-q">"O que exatamente eu vou oferecer?"</p>
         <p>A escada de produtos: a isca grátis, o treinamento por dentro (módulo a módulo), os bônus, o preço e a garantia.</p>
-        <a class="fs-link" href="estrutura-produtos-oferta.html">💰 O que você vende →</a>
+        <div class="fs-foot">
+          <span class="fs-hint">Página 2 de 4</span>
+          <a class="fs-btn" href="estrutura-produtos-oferta.html">Abrir "O que você vende" →</a>
+        </div>
       </div>
 
       <div class="fstep">
@@ -272,7 +283,10 @@
         <h3>Aprenda a produzir</h3>
         <p class="fs-q">"Como eu faço isso na prática?"</p>
         <p>O passo a passo de execução: o que filmar antes, o tom de voz, as técnicas, e o calendário dos 30 dias com o momento certo de captar contato e de vender.</p>
-        <a class="fs-link" href="guia-execucao-conteudo.html">🎬 Guia de execução →</a>
+        <div class="fs-foot">
+          <span class="fs-hint">Página 3 de 4</span>
+          <a class="fs-btn" href="guia-execucao-conteudo.html">Abrir o "Guia de execução" →</a>
+        </div>
       </div>
 
       <div class="fstep">
@@ -280,7 +294,10 @@
         <h3>Execute</h3>
         <p class="fs-q">"O que eu falo e o que eu posto?"</p>
         <p>A fala pronta de cada vídeo e a legenda de cada post, com assinatura, hashtags e botão de copiar. É a página que você abre na hora de gravar.</p>
-        <a class="fs-link" href="roteiros-conteudo.html">🎤 Roteiros e legendas →</a>
+        <div class="fs-foot">
+          <span class="fs-hint">Página 4 de 4</span>
+          <a class="fs-btn" href="roteiros-conteudo.html">Abrir "Roteiros e legendas" →</a>
+        </div>
       </div>
 
     </div>
