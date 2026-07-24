@@ -129,6 +129,39 @@
   .htags{margin-top:10px;font-size:13px;color:var(--gold-dk);font-family:'Inter';word-spacing:2px}
   .cta-badge{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;background:#EDE6DA;color:var(--gold-dk);border-radius:999px;padding:4px 12px}
 
+  /* destaques do instagram (circulos) */
+  .dest-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin:6px 0 4px}
+  .dest{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none}
+  .dest .circ{width:100%;max-width:92px;aspect-ratio:1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.75rem;position:relative;box-shadow:0 4px 14px rgba(20,33,50,.13)}
+  .dest .circ:before{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--line)}
+  .dest.navy .circ{background:var(--navy)}
+  .dest.navy .circ:before{border-color:var(--gold)}
+  .dest.gold .circ{background:var(--gold)}
+  .dest.gold .circ:before{border-color:var(--navy)}
+  .dest .nome{font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);text-align:center;line-height:1.25}
+  .dest .ordem{font-size:10.5px;color:var(--muted);font-weight:600;letter-spacing:.06em}
+
+  /* cards de explicacao dos destaques */
+  .dcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+  .dcard .top{display:flex;align-items:center;gap:13px;margin-bottom:12px}
+  .dcard .mini{width:44px;height:44px;flex:0 0 auto;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:600;font-size:1.05rem}
+  .dcard.navy .mini{color:var(--gold)}
+  .dcard.gold .mini{color:var(--navy)}
+  .dcard.navy .mini{background:var(--navy)}
+  .dcard.gold .mini{background:var(--gold)}
+  .dcard h4{font-family:'Poppins',sans-serif;font-size:1.02rem;font-weight:600;line-height:1.2}
+  .dcard .fn{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-dk);font-weight:700;margin-top:2px}
+  .dcard .lin{font-size:14.2px;color:var(--muted);margin-bottom:8px}
+  .dcard .lin b{color:var(--ink)}
+  .dcard .lin:last-child{margin-bottom:0}
+
+  @media(max-width:760px){
+    .dest-row{grid-template-columns:repeat(3,1fr);gap:18px}
+  }
+  @media(max-width:420px){
+    .dest-row{grid-template-columns:repeat(2,1fr)}
+  }
+
   /* mapa do mes */
   .mday{aspect-ratio:1;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:#fff}
   .mday.t1{background:#8FA6C0}
@@ -192,6 +225,7 @@
     <a href="#comecar">Como usar</a>
     <a href="#regra">A regra de ouro</a>
     <a href="#kit">Seu kit</a>
+    <a href="#destaques">Destaques</a>
     <a href="#voz">Como falar</a>
     <a href="#tecnicas">7 técnicas</a>
     <a href="#captacao">O dia de captação</a>
@@ -279,6 +313,100 @@
     </div>
     <div class="note" style="margin-top:18px">
       <b>Regra de segurança na obra:</b> capacete sempre que houver gente trabalhando. Aparecer com o equipamento de proteção não atrapalha o vídeo — passa seriedade e vira parte da imagem de quem faz certo.
+    </div>
+  </div>
+</section>
+
+<!-- ══════ DESTAQUES DO PERFIL ══════ -->
+<section id="destaques">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">A vitrine do perfil</span>
+      <h2>Os 6 destaques do Instagram</h2>
+      <p>Os destaques são a <strong>vitrine</strong> do perfil: quem chega hoje não vai rolar 30 posts para trás, mas clica neles. São seis, nesta ordem — e cada um tem uma função. Junto, eles contam a história inteira em 30 segundos.</p>
+    </div>
+
+    <div class="card" style="margin-bottom:22px">
+      <div class="dest-row">
+        <div class="dest navy"><div class="circ"></div><div class="nome">Comece<br>aqui</div><div class="ordem">1</div></div>
+        <div class="dest gold"><div class="circ"></div><div class="nome">A conta</div><div class="ordem">2</div></div>
+        <div class="dest navy"><div class="circ"></div><div class="nome">A obra</div><div class="ordem">3</div></div>
+        <div class="dest gold"><div class="circ"></div><div class="nome">Erros</div><div class="ordem">4</div></div>
+        <div class="dest navy"><div class="circ"></div><div class="nome">Checklist</div><div class="ordem">5</div></div>
+        <div class="dest gold"><div class="circ"></div><div class="nome">Planilha</div><div class="ordem">6</div></div>
+      </div>
+      <p class="small muted" style="text-align:center;margin-top:18px">É assim que vai aparecer logo abaixo da bio: <strong>capa lisa, só a cor</strong> — sem ícone, sem desenho. Alternando o azul-marinho e o dourado da marca. É o acabamento mais limpo e o que menos envelhece; quem identifica o destaque é o nome embaixo.</p>
+    </div>
+
+    <div class="grid g3" style="margin-bottom:20px">
+
+      <div class="dcard navy">
+        <div class="top"><div class="mini">1</div><div><h4>Comece aqui</h4><div class="fn">Função: reter quem chegou</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> o manifesto, quem você é, o que é a obra aberta e o que a pessoa vai encontrar no perfil.</p>
+        <p class="lin"><b>Por que existe:</b> é a resposta para "quem é esse cara e por que eu deveria seguir?". Sem isso, o visitante novo sai sem entender.</p>
+        <p class="lin"><b>Como alimentar:</b> stories dos dias 1, 2 e 6.</p>
+      </div>
+
+      <div class="dcard gold">
+        <div class="top"><div class="mini">2</div><div><h4>A conta</h4><div class="fn">Função: o diferencial</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> o Raio-X do mês, orçado × real, custo de cada etapa, a planilha aberta na tela.</p>
+        <p class="lin"><b>Por que existe:</b> <b>é o motivo de te seguirem.</b> Nenhum concorrente abre número. É o destaque mais importante dos seis.</p>
+        <p class="lin"><b>Como alimentar:</b> stories dos dias 7, 8 e 14, e todo dia 1º do mês.</p>
+      </div>
+
+      <div class="dcard navy">
+        <div class="top"><div class="mini">3</div><div><h4>A obra</h4><div class="fn">Função: fazer voltar</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> o progresso por etapa, time-lapse, antes e depois do mesmo canto.</p>
+        <p class="lin"><b>Por que existe:</b> é a novela. Quem acompanha uma obra quer ver o próximo capítulo — e volta ao perfil por isso.</p>
+        <p class="lin"><b>Como alimentar:</b> stories de bastidor da obra, toda semana.</p>
+      </div>
+
+      <div class="dcard gold">
+        <div class="top"><div class="mini">4</div><div><h4>Erros</h4><div class="fn">Função: gerar confiança</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> o que deu errado, quanto custou e como foi resolvido.</p>
+        <p class="lin"><b>Por que existe:</b> assumir erro é o que mais constrói confiança — e é o que ninguém tem coragem de publicar.</p>
+        <p class="lin"><b>Como alimentar:</b> stories dos dias 10 e 20, e sempre que um perrengue acontecer.</p>
+      </div>
+
+      <div class="dcard navy">
+        <div class="top"><div class="mini">5</div><div><h4>Checklist</h4><div class="fn">Função: ser útil</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> terreno, documentação, contrato e financiamento — o educativo prático.</p>
+        <p class="lin"><b>Por que existe:</b> é o conteúdo que a pessoa salva e manda para o cônjuge. Utilidade que circula sozinha.</p>
+        <p class="lin"><b>Como alimentar:</b> stories dos dias 3, 4, 9, 11, 12, 17 e 19.</p>
+      </div>
+
+      <div class="dcard gold">
+        <div class="top"><div class="mini">6</div><div><h4>Planilha</h4><div class="fn">Função: converter</div></div></div>
+        <p class="lin"><b>O que vai dentro:</b> o que é a Planilha do Orçamento Real, o que ela mostra e como baixar (link).</p>
+        <p class="lin"><b>Por que existe:</b> <b>é o único que capta contato.</b> Sem ele, todo o esforço vira seguidor e não vira lista.</p>
+        <p class="lin"><b>Como alimentar:</b> stories dos dias 15, 16 e 21.</p>
+      </div>
+
+    </div>
+
+    <div class="note" style="margin-bottom:16px">
+      <b>O sexto é o slot rotativo.</b> Fora de lançamento, ele é a <strong>Planilha</strong>. Na semana de venda (dias 22 a 30), você troca a capa e o conteúdo para <strong>Obra Blindada</strong>, com os stories da oferta. Terminou o lançamento, volta para a planilha. É o único destaque que muda — os outros cinco ficam fixos.
+    </div>
+
+    <div class="good" style="margin-bottom:20px">
+      <b>Por que não organizar por fase da obra</b> (terreno, fundação, estrutura…). Parece lógico, mas envelhece: quando a obra chegar no acabamento, você precisaria de mais um destaque a cada etapa — e ficaria sem espaço justamente para o que converte. Os seis acima funcionam do primeiro ao último dia da obra.
+    </div>
+
+    <div class="genimg">
+      <div class="lb">🎨 Como fazer as capas — 10 minutos, uma vez só</div>
+      <p class="how"><b>Não precisa de designer nem de gerador de imagem.</b> As capas são <b>lisas, só a cor de fundo</b> — sem ícone, sem desenho, sem texto dentro. É o acabamento mais limpo, e é o nome embaixo do círculo que identifica cada destaque.</p>
+      <div class="prompt">
+        <div class="ptop">📋 O passo a passo no Canva</div>
+        <p class="ptext">
+          1. Crie um design quadrado de <em>1080 × 1080</em>.<br>
+          2. Preencha o fundo inteiro com uma cor só, sem mais nada.<br>
+          3. Baixe. Repita trocando a cor, até ter os dois arquivos.<br><br>
+          <em>Destaques 1, 3 e 5</em> → azul-marinho <em>#142132</em><br>
+          <em>Destaques 2, 4 e 6</em> → dourado <em>#C08B4A</em><br><br>
+          4. No Instagram: Editar destaque → Editar capa → escolha a imagem da cor certa.<br>
+          5. Escreva o nome do destaque (é ele que aparece embaixo do círculo).
+        </p>
+      </div>
     </div>
   </div>
 </section>
