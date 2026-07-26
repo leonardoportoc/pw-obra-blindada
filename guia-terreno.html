@@ -10,92 +10,96 @@
 <link rel="icon" type="image/png" href="logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="pw-ui.css" />
 </head>
 <body>
 
 <header class="hdr">
-  <div class="container hdr-in">
-    <a href="bio.html" class="hdr-logo"><img src="logo.png" alt="PW" /><span><b>PW</b><span>Construção Inteligente</span></span></a>
+  <div class="wrap hdr-in">
+    <a href="bio.html" class="hdr-logo"><img src="logo.png" alt="PW" /><b>PW<span>Construção Inteligente</span></b></a>
     <a href="#oferta" class="hdr-cta">Comprar o guia</a>
     <button class="hdr-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="hero">
-  <span class="orb orb1"></span><span class="orb orb2"></span><span class="grid-pat"></span>
-  <div class="container hero-in" style="text-align:center;max-width:780px;margin:0 auto">
-    <span class="eyebrow on-dark center reveal">Guia prático · nível de entrada</span>
-    <h1 class="reveal" style="margin-left:auto;margin-right:auto">O terreno errado é o <em>prejuízo mais caro</em> de uma obra</h1>
-    <p class="lead reveal" style="margin-left:auto;margin-right:auto">Um terreno inclinado ou com solo ruim pode custar dezenas de milhares de reais antes da primeira parede. Este guia te ensina a enxergar isso <strong style="color:#fff">antes de assinar</strong>.</p>
-    <div class="ctas reveal" style="justify-content:center">
-      <a href="#oferta" class="btn btn--primary">Quero o Guia do Terreno
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="blueprint-grid"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="sheet-tag reveal">Guia prático · nível de entrada</span>
+      <h1 class="reveal">O terreno errado é o <span class="u">prejuízo mais caro</span> de uma obra</h1>
+      <p class="lead reveal">Um terreno inclinado ou com solo ruim pode custar dezenas de milhares de reais antes da primeira parede. Este guia te ensina a enxergar isso <strong style="color:var(--ink)">antes de assinar</strong>.</p>
+      <div class="ctas reveal"><a href="#oferta" class="btn btn--primary">Quero o Guia do Terreno
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="hero-art reveal" aria-hidden="true">
+      <svg viewBox="0 0 300 240" fill="none" stroke="#5E6B7A" stroke-width="1.2">
+        <!-- lote / topografia -->
+        <rect x="40" y="60" width="220" height="140" stroke="#20303F" stroke-width="1.6"/>
+        <path d="M40 100c50-8 90 10 130 4s70-14 90-6M40 140c60 10 100-8 140-4s60 12 80 8" stroke="#5E6B7A" stroke-dasharray="3 4"/>
+        <!-- marcador de nível -->
+        <circle cx="150" cy="120" r="4" fill="#C08B4A" stroke="none"/>
+        <path d="M150 40v16M150 60l-6-6M150 60l6-6" stroke="#C08B4A"/>
+        <text x="160" y="46" fill="#8A5D28" stroke="none" font-family="'Space Mono',monospace" font-size="11">NÍVEL</text>
+        <!-- cotas -->
+        <path d="M40 214h220M40 210v8M260 210v8" stroke="#C08B4A"/>
+        <text x="150" y="230" text-anchor="middle" fill="#8A5D28" stroke="none" font-family="'Space Mono',monospace" font-size="12">LOTE · 12 x 30 m</text>
+        <text x="252" y="54" fill="#8B8574" stroke="none" font-family="'Space Mono',monospace" font-size="10">PLANTA</text>
+      </svg>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow center reveal">O que você vai aprender</span>
-      <h2 class="reveal">Um terreno bem escolhido economiza a obra inteira</h2>
+<section class="sheet">
+  <div class="wrap">
+    <div class="sheet-head center"><span class="sheet-tag reveal" style="justify-content:center">01 · O que você avalia</span><h2 class="reveal">Um terreno bem escolhido economiza a obra inteira</h2></div>
+    <div class="rows reveal">
+      <div class="rowitem"><span class="idx">01</span><div><h4>Topografia</h4><p>Como ler a inclinação e estimar o custo de aterro e contenção antes de comprar.</p></div></div>
+      <div class="rowitem"><span class="idx">02</span><div><h4>Solo</h4><p>O que é a sondagem e quando ela evita a fundação cara — o exame de sangue do terreno.</p></div></div>
+      <div class="rowitem"><span class="idx">03</span><div><h4>Zoneamento</h4><p>O que a prefeitura deixa você construir naquele lote, e o que muda o seu projeto.</p></div></div>
+      <div class="rowitem"><span class="idx">04</span><div><h4>Documentação</h4><p>As certidões que dizem se o terreno é mesmo do vendedor e se não vem com dívida junto.</p></div></div>
     </div>
-    <div class="grid g4" style="gap:18px">
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 18l6-3 6 3 6-3M3 12l6-3 6 3 6-3M3 6l6-3 6 3 6-3"/></svg></div><h3 style="font-size:1.05rem">Topografia</h3><p style="font-size:14.4px">Como ler a inclinação e estimar o custo de aterro e contenção.</p></div>
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v6M8 8h8M6 14h12l-1 8H7l-1-8z"/></svg></div><h3 style="font-size:1.05rem">Solo</h3><p style="font-size:14.4px">O que é a sondagem e quando ela evita a fundação cara.</p></div>
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3v4M16 3v4M4 9h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z"/></svg></div><h3 style="font-size:1.05rem">Zoneamento</h3><p style="font-size:14.4px">O que a prefeitura deixa você construir naquele lote.</p></div>
-      <div class="card reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 12l2 2 4-4M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z"/></svg></div><h3 style="font-size:1.05rem">Documentação</h3><p style="font-size:14.4px">As certidões que dizem se o terreno é mesmo do vendedor.</p></div>
-    </div>
-    <div class="narrow reveal" style="margin-top:40px">
-      <div class="card">
-        <h3>O que vem no guia</h3>
-        <ul class="checks" style="margin-top:8px">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>O passo a passo de avaliação, do primeiro olhar à assinatura.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>O <strong>checklist para levar na visita</strong> ao terreno.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>As armadilhas mais comuns — e como cada uma vira custo.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>As certidões, uma a uma, e o que cada uma protege.</span></li>
-        </ul>
-      </div>
+    <div class="col reveal" style="margin-top:40px;padding:0">
+      <div class="note"><b>O que vem no guia:</b> o passo a passo de avaliação da primeira visita à assinatura, o checklist para levar no terreno, as armadilhas mais comuns e como cada uma vira custo, e as certidões uma a uma.</div>
     </div>
   </div>
 </section>
 
-<section class="surf" id="oferta">
-  <div class="container">
-    <div class="offer reveal" style="max-width:640px;margin:0 auto">
-      <span class="orb1"></span>
-      <div class="in">
-        <span class="eyebrow on-dark center">Guia do Terreno</span>
+<section class="sheet ink" id="oferta">
+  <div class="blueprint-grid" style="position:absolute;inset:0;opacity:.5"></div>
+  <div class="wrap" style="position:relative">
+    <div class="offer reveal" style="max-width:640px;margin:0 auto;background:transparent;padding:0">
+      <div class="in" style="text-align:center">
+        <span class="sheet-tag on-ink" style="justify-content:center">02 · Investimento</span>
         <h2>Não compre um problema</h2>
         <p style="color:#C4CCD8;max-width:460px;margin:10px auto 0">Guia prático e direto, para você aplicar já na próxima visita.</p>
-        <div class="price"><span class="big">R$ 47</span><span class="cond">pagamento único · acesso imediato</span></div>
-        <a href="#" class="btn btn--primary btn--lg">Comprar agora</a>
+        <div class="priceblock"><span class="big">R$ 47</span><span class="cond">pagamento único · acesso imediato</span></div>
+        <div style="margin-top:20px"><a href="#" class="btn btn--primary btn--lg">Comprar agora</a></div>
         <div class="mini-note">Compra segura · acesso na hora</div>
         <div class="badges"><span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"/></svg><b>7 dias</b> de garantia</span></div>
       </div>
     </div>
-    <div class="narrow reveal" style="margin-top:30px">
-      <div class="note gold">
-        <b>Vai construir de verdade?</b> O Guia do Terreno é o começo. O caminho completo — do terreno à chave, acompanhando uma obra real — está no treinamento
-        <a href="obra-blindada.html">Obra Blindada</a>.
-      </div>
-    </div>
+  </div>
+</section>
+
+<section class="sheet">
+  <div class="col">
+    <div class="note"><b>Vai construir de verdade?</b> O Guia do Terreno é o começo. O caminho completo — do terreno à chave, acompanhando uma obra real — está no treinamento <a href="obra-blindada.html">Obra Blindada</a>.</div>
   </div>
 </section>
 
 <footer class="ft">
-  <div class="container">
+  <div class="wrap">
     <div class="ft-top">
-      <div class="ft-brand"><img src="logo.png" alt="PW" /><div><b>PW Construção Inteligente</b><span>Método Obra Blindada</span></div></div>
+      <div class="ft-brand"><img src="logo.png" alt="PW" /><b>PW Construção Inteligente<span>Método Obra Blindada</span></b></div>
       <div class="ft-links"><a href="bio.html">Início</a><a href="obra-blindada.html">Treinamento</a><a href="planilha.html">Planilha grátis</a></div>
     </div>
     <div class="ft-legal"><p>© 2026 PW Construção Inteligente. Todos os direitos reservados.</p></div>
   </div>
 </footer>
 
-<a href="#" class="wa-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.63.85 5.06 2.28 7.03L.79 23.49a.75.75 0 00.92.92l4.46-1.49A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg></a>
+<a href="#" class="wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.63.85 5.06 2.28 7.03L.79 23.49a.75.75 0 00.92.92l4.46-1.49A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg></a>
 
 <script src="pw-ui.js"></script>
 </body>

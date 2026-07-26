@@ -10,67 +10,66 @@
 <link rel="icon" type="image/png" href="logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="pw-ui.css" />
 </head>
 <body>
 
 <header class="hdr">
-  <div class="container hdr-in">
-    <a href="bio.html" class="hdr-logo"><img src="logo.png" alt="PW" /><span><b>PW</b><span>Construção Inteligente</span></span></a>
+  <div class="wrap hdr-in">
+    <a href="bio.html" class="hdr-logo"><img src="logo.png" alt="PW" /><b>PW<span>Construção Inteligente</span></b></a>
     <a href="obra-blindada.html" class="hdr-cta">Conhecer o treinamento</a>
+    <button class="hdr-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="hero">
-  <span class="orb orb1"></span><span class="orb orb2"></span><span class="grid-pat"></span>
-  <div class="container hero-in">
-    <div class="grid g2" style="align-items:center;gap:48px">
-      <div>
-        <span class="eyebrow on-dark reveal">Material gratuito</span>
-        <h1 class="reveal" style="font-size:clamp(1.9rem,4.4vw,3rem)">Descubra quanto a sua obra vai custar <em>de verdade</em></h1>
-        <p class="lead reveal">A Planilha do Orçamento Real mostra todas as etapas da obra — inclusive as cinco linhas de custo que somem da maioria dos orçamentos e aparecem só lá na frente, quando já é tarde.</p>
-        <ul class="checks reveal" style="margin-top:26px">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C08B4A" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span style="color:#D7DDE6">Todas as etapas, com as linhas de custo de cada uma</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C08B4A" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span style="color:#D7DDE6">As 5 linhas que quase todo orçamento esconde</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C08B4A" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span style="color:#D7DDE6">Espaço para comparar o orçado × o gasto real</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C08B4A" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span style="color:#D7DDE6">O checklist das certidões do terreno, de brinde</span></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="formcard">
-          <h3 style="font-size:1.3rem;margin-bottom:6px">Receba a planilha agora</h3>
-          <p style="color:var(--muted);font-size:14.6px;margin-bottom:20px">Preencha e enviamos o link na hora, no seu e-mail e WhatsApp.</p>
-          <form action="#" method="post" novalidate>
-            <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos te chamar" required autocomplete="name" /></div>
-            <div class="field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required autocomplete="email" inputmode="email" /></div>
-            <div class="field"><label for="whats">Seu WhatsApp</label><input id="whats" name="whatsapp" type="tel" placeholder="(00) 00000-0000" required autocomplete="tel" inputmode="tel" /></div>
-            <button type="submit" class="btn btn--primary btn--block btn--lg">Quero a planilha grátis
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></button>
-            <p class="formnote">Sem spam. Você recebe a planilha e, de vez em quando, conteúdo útil sobre construção. Cancele quando quiser.</p>
-          </form>
-        </div>
+  <div class="blueprint-grid"></div>
+  <div class="wrap hero-grid" style="align-items:center">
+    <div>
+      <span class="sheet-tag reveal">Material gratuito · Ficha de custos</span>
+      <h1 class="reveal" style="font-size:clamp(2.1rem,4.6vw,3.2rem)">Quanto a sua obra vai custar <span class="u">de verdade</span></h1>
+      <p class="lead reveal">A Planilha do Orçamento Real abre todas as etapas da obra — inclusive as cinco linhas de custo que somem da maioria dos orçamentos e aparecem só lá na frente, quando já é tarde.</p>
+      <ul class="spec reveal" style="margin-top:26px">
+        <li>Todas as etapas, com as linhas de custo de cada uma</li>
+        <li>As <strong>5 linhas</strong> que quase todo orçamento esconde</li>
+        <li>Espaço para comparar o <strong>orçado × o gasto real</strong></li>
+        <li>O checklist das certidões do terreno, de brinde</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="formcard">
+        <span class="sheet-tag">Receber a planilha</span>
+        <h3 style="font-size:1.4rem;margin:12px 0 4px">Envio na hora</h3>
+        <p style="color:var(--muted);font-size:14.6px;margin-bottom:20px">Preencha e mandamos o link no seu e-mail e WhatsApp.</p>
+        <form action="#" method="post" novalidate>
+          <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos te chamar" required autocomplete="name" /></div>
+          <div class="field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required autocomplete="email" inputmode="email" /></div>
+          <div class="field"><label for="whats">Seu WhatsApp</label><input id="whats" name="whatsapp" type="tel" placeholder="(00) 00000-0000" required autocomplete="tel" inputmode="tel" /></div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Quero a planilha grátis
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg></button>
+          <p class="formnote">Sem spam. Você recebe a planilha e, de vez em quando, conteúdo útil sobre construção. Cancele quando quiser.</p>
+        </form>
       </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="narrow" style="text-align:center">
-    <span class="eyebrow center reveal">Por que ela é diferente</span>
-    <h2 class="reveal" style="margin:16px 0 16px">Não é um modelo genérico da internet</h2>
-    <p class="reveal" style="color:var(--muted);font-size:1.08rem">É a mesma base que usamos numa obra real, do terreno à chave. Enquanto a maioria das planilhas mostra o que é óbvio, esta te mostra <strong>onde o dinheiro some sem você perceber</strong> — e é isso que separa a obra que fecha da que estoura.</p>
-    <div style="margin-top:30px" class="reveal">
-      <a href="obra-blindada.html" style="display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--gold-dk)">Depois da planilha, conheça o treinamento completo
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
+<section class="sheet paper2">
+  <div class="col" style="text-align:center">
+    <span class="sheet-tag reveal" style="justify-content:center">Por que ela é diferente</span>
+    <h2 class="reveal" style="margin:16px 0 16px;font-size:clamp(1.6rem,3.4vw,2.3rem)">Não é um modelo genérico da internet</h2>
+    <p class="reveal" style="color:var(--muted);font-size:1.1rem">É a mesma base que usamos numa obra real, do terreno à chave. Enquanto a maioria das planilhas mostra o óbvio, esta te mostra <strong>onde o dinheiro some sem você perceber</strong> — e é isso que separa a obra que fecha da que estoura.</p>
+    <div class="dim reveal" style="max-width:420px;margin:34px auto 0"><span class="rule"></span><span class="val">Próximo passo</span><span class="rule"></span></div>
+    <div class="reveal" style="margin-top:20px"><a href="obra-blindada.html" class="btn btn--ghost">Conhecer o treinamento completo
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
 <footer class="ft">
-  <div class="container">
+  <div class="wrap">
     <div class="ft-top">
-      <div class="ft-brand"><img src="logo.png" alt="PW" /><div><b>PW Construção Inteligente</b><span>Método Obra Blindada</span></div></div>
+      <div class="ft-brand"><img src="logo.png" alt="PW" /><b>PW Construção Inteligente<span>Método Obra Blindada</span></b></div>
       <div class="ft-links"><a href="bio.html">Início</a><a href="obra-blindada.html">Treinamento</a><a href="guia-terreno.html">Guia do Terreno</a></div>
     </div>
     <div class="ft-legal"><p>© 2026 PW Construção Inteligente. Todos os direitos reservados.</p></div>
