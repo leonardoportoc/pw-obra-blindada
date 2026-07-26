@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google Tag Manager -->
+<script>if("__GTM_ID__".indexOf("GTM-")===0){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','__GTM_ID__');}</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
@@ -12,8 +15,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="pw-ui.css" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "PW Construção Inteligente", "alternateName": "Método Obra Blindada", "url": "https://leonardoportoc.github.io/pw-obra-blindada/", "logo": "logo.png", "sameAs": ["https://instagram.com/pwconstrucaointeligente"]}</script>
 </head>
-<body>
+<body data-page="planilha">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=__GTM_ID__" height="0" width="0" style="display:none;visibility:hidden" title="gtm"></iframe></noscript>
+
 
 <header class="hdr">
   <div class="wrap hdr-in">
@@ -42,7 +49,7 @@
         <span class="sheet-tag">Receber a planilha</span>
         <h3 style="font-size:1.4rem;margin:12px 0 4px">Envio na hora</h3>
         <p style="color:var(--muted);font-size:14.6px;margin-bottom:20px">Preencha e mandamos o link no seu e-mail e WhatsApp.</p>
-        <form action="#" method="post" novalidate>
+        <form action="#" method="post" novalidate data-ev="generate_lead">
           <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" placeholder="Como podemos te chamar" required autocomplete="name" /></div>
           <div class="field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@email.com" required autocomplete="email" inputmode="email" /></div>
           <div class="field"><label for="whats">Seu WhatsApp</label><input id="whats" name="whatsapp" type="tel" placeholder="(00) 00000-0000" required autocomplete="tel" inputmode="tel" /></div>
@@ -77,5 +84,6 @@
 </footer>
 
 <script src="pw-ui.js"></script>
+<script src="pw-track.js"></script>
 </body>
 </html>
